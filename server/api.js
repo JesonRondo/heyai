@@ -63,6 +63,7 @@ router.get('/api/list', async function (ctx, next) {
     uploadFolders = list
   })
 
+  ctx.set('content-type', 'application/json');
   ctx.body = JSON.stringify({
     ok: true,
     list: uploadFolders,
@@ -76,6 +77,7 @@ router.get('/api/eatmenu', async function (ctx, next) {
     menu = menuStr
   }).catch(err => {})
 
+  ctx.set('content-type', 'application/json');
   ctx.body = menu
 })
 
@@ -86,6 +88,7 @@ router.post('/api/upload', async function (ctx, next) {
     body = parsed
   })
 
+  ctx.set('content-type', 'application/json');
   if (!body.files || !body.files.file) {
     ctx.body = JSON.stringify({
       ok: false,
