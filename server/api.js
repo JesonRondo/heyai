@@ -17,7 +17,9 @@ if (!fs.existsSync(uploadPath)) {
 
 const parseBody = function (req) {
   return new Promise((resolve, reject) => {
-    const form = new multiparty.Form()
+    const form = new multiparty.Form({
+      uploadDir: path.resolve(__dirname, 'tmp')
+    })
     form.parse(req, function (err, fields, files) {
       resolve({fields, files})
     })

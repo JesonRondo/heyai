@@ -4,3 +4,4 @@ dist
 configs/cert
 .DS_Store
 *.dmg
+tmp
