@@ -44,6 +44,7 @@ const ee = appdmg({
 ee.on('finish', () => {
   exec(`cp ${dmgPath} ${process.cwd()}/static/download/`)
   console.log('create dmg done')
+  process.exit(0)
 })
 
 ee.on('error', err => {

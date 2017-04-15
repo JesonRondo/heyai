@@ -47,7 +47,7 @@ const getFolders = function () {
 
 const getMenu = function () {
   return new Promise((resolve, reject) => {
-    fs.readFile('./data/menu.json', 'utf-8', function (err, data) {
+    fs.readFile(path.resolve(__dirname, './data/menu.json'), 'utf-8', function (err, data) {
       if (err) {
         reject(err)
       } else {

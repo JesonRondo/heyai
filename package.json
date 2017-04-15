@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node index.js & cd clients/television/ && node build/dev-server.js & /Applications/nwjs.app/Contents/MacOS/nwjs ./clients/television & wait",
     "build": "node build/index.js",
+    "upload": "scp static/download/禾一的小助手_v1.0.0.dmg root@heyai.me:/data/app/heyai/static/download/",
     "start": "pm2 start index.js --name heyai",
     "restart": "pm2 restart heyai",
     "stop": "pm2 stop heyai",
