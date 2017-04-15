@@ -1,0 +1,14 @@
+{
+  "title": "禾一的小助手",
+  "contents": [{
+    "x": 510,
+    "y": 286,
+    "type": "link",
+    "path": "/Applications"
+  }, {
+    "x": 510,
+    "y": 129,
+    "type": "file",
+    "path": "../clients/television/dist/禾一的小助手.app"
+  }]
+}

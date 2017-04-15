@@ -1,0 +1,25 @@
+{
+  "name": "禾一的小助手",
+  "version": "1.0.0",
+  "description": "power televsion",
+  "author": "pancnlz@gmail.com",
+  "main": "index.html",
+  "private": true,
+  "window": {
+    "width": 480,
+    "height": 240,
+    "frame": false
+  },
+  "scripts": {
+    "build": "node build/build.js"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

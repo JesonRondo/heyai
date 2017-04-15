@@ -1,0 +1,5 @@
+CFBundleDisplayName = "禾一的小助手";
+CFBundleGetInfoString = "nwjs 57.0.2987.133, Copyright 2017 The Chromium Authors, NW.js contributors, Node.js. All rights reserved.";
+CFBundleName = "禾一的小助手";
+NSContactsUsageDescription = "通讯录中的详细信息有助于您在Chromium中更快速地填写表单。";
+NSHumanReadableCopyright = "Copyright 2017 The Chromium Authors, NW.js contributors, Node.js. All rights reserved.";

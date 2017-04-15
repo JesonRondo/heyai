@@ -1,0 +1,2 @@
+key & pem put here 'heyai/configs/cert'
+modify heyai.me.conf path '/Users/me2/Projects/heyai/configs/cert/xxx.[pem|key]'
