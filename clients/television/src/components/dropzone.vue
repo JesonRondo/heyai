@@ -179,7 +179,7 @@ export default {
     wsInit () {
       let that = this
       if (!this.socket) {
-        this.socket = new WebSocket('wss://heyai.me:7773')
+        this.socket = new WebSocket('wss://heyai.me/wss')
 
         this.socket.addEventListener('message', function (event) {
           let data = JSON.parse(event.data)
@@ -200,7 +200,7 @@ export default {
 
           // reconnect after 3s
           setTimeout(() => {
-            that.socket = new WebSocket('wss://heyai.me:7773') 
+            that.socket = new WebSocket('wss://heyai.me/wss') 
           }, 3000)
         })
       }
