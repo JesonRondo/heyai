@@ -30,6 +30,7 @@ exec([
   `mv ${distPath}/index.html ${appPath}/Contents/Resources/app.nw/`,
   `mv ${distPath}/static ${appPath}/Contents/Resources/app.nw/`,
   `cp ${clientPath}/package.json ${appPath}/Contents/Resources/app.nw/`,
+  `cp -fr ${clientPath}/Info.plist ${appPath}/Contents/Info.plist`
 ].join(' && '))
 
 console.log('create dmg start...')
